@@ -1,115 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Color Palette Generator</title>
+  <title>CodePen - 01. Color Palette Generator</title>
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="/css/style.css">
+
 </head>
-
 <body>
-  <!-- partial:index.partial.html -->
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--     <link rel="stylesheet" href="style.css" /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
-    <title>Color Palette Generator</title>
-  </head>
-
-  <body>
-
-    <div>
-      <div style="height: 10rem; width: 8rem; background-color: grey; padding: 2rem; border-radius: 2rem; display: flex; justify-content: flex-start;">
-        <div style="height: 3rem; width: 4rem; border-radius: 2rem;" id="color-1">
-
+<!-- partial:index.partial.html -->
+<body>
+    <section id="colour_palette">
+      <div class="container">
+        <div class="clicked-colour">
+          <h5>
+            Colour <strong class="hex-colour"></strong> copied to your clipboard
+          </h5>
         </div>
-        <h3 style="color: white;" id="hexColor1">Color</h3>
+        <div class="colour-header">
+          <h2>Colour palette generator</h2>
+        </div>
+        <div class="colour-palette-showcase">
+          <div class="colour-value">
+            <div class="colour"></div>
+            <p class="colour-value-text"></p>
+          </div>
+          <div class="colour-value">
+            <div class="colour"></div>
+            <p class="colour-value-text"></p>
+          </div>
+          <div class="colour-value">
+            <div class="colour"></div>
+            <p class="colour-value-text"></p>
+          </div>
+          <div class="colour-value">
+            <div class="colour"></div>
+            <p class="colour-value-text"></p>
+          </div>
+          <div class="colour-value">
+            <div class="colour"></div>
+            <p class="colour-value-text"></p>
+          </div>
+        </div>
+        <div class="generate-colour">
+          <button class="btn" id="copy-button">Generate palette</button>
+
+          <p class="btn-secondary-text">
+            Or just press the &quot;Spacebar&quot; to generate new palettes.
+          </p>
+        </div>
+        <div class="instructions">
+          <p>
+            Click to copy individual colour • Press &quot;C&quot; to copy
+            palette
+          </p>
+        </div>
       </div>
-    </div>
-
-    <div style="display: flex; justify-content: center;">
-      <!-- Color Palettes -->
-      <div class="w-layout-grid main-grid margin-bottom-small">
-        <section id="color-palettes">
-
-          <div class="w-layout-grid main-grid margin-bottom-small">
-            <div id="w-node-df6b7e03-bb73-87a9-bfd4-1931cd314867-c5ade2c8"
-              data-w-id="df6b7e03-bb73-87a9-bfd4-1931cd314867" class="gray-wrapper ">
-              <div class="icon-box colors-inner" id="color-1" style="width: 100%; height: 50%;">
-              </div>
-              <div
-                style="transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                class="content-wrapper">
-                <h3 id="hexColor1" class="heading-small">Color1</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-layout-grid main-grid margin-bottom-small">
-            <div id="w-node-df6b7e03-bb73-87a9-bfd4-1931cd314867-c5ade2c8"
-              data-w-id="df6b7e03-bb73-87a9-bfd4-1931cd314867" class="gray-wrapper">
-              <div class="icon-box colors-inner" id="color-2" style="width: 100%; height: 50%;">
-              </div>
-              <div
-                style="transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                class="content-wrapper">
-                <h3 id="hexColor2" class="heading-small">Color2</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-layout-grid main-grid margin-bottom-small">
-            <div id="w-node-df6b7e03-bb73-87a9-bfd4-1931cd314867-c5ade2c8"
-              data-w-id="df6b7e03-bb73-87a9-bfd4-1931cd314867" class="gray-wrapper ">
-              <div class="icon-box colors-inner" id="color-3" style="width: 100%; height: 50%;">
-              </div>
-              <div
-                style="transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                class="content-wrapper">
-                <h3 id="hexColor3" class="heading-small">Color3</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-layout-grid main-grid margin-bottom-small">
-            <div id="w-node-df6b7e03-bb73-87a9-bfd4-1931cd314867-c5ade2c8"
-              data-w-id="df6b7e03-bb73-87a9-bfd4-1931cd314867" class="gray-wrapper">
-              <div class="icon-box colors-inner" id="color-4" style="width: 100%; height: 50%;">
-              </div>
-              <div class="content-wrapper">
-                <h3 id="hexColor4" class="heading-small">Color4</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-layout-grid main-grid margin-bottom-small">
-            <div id="w-node-df6b7e03-bb73-87a9-bfd4-1931cd314867-c5ade2c8"
-              data-w-id="df6b7e03-bb73-87a9-bfd4-1931cd314867" class="gray-wrapper ">
-              <div class="icon-box colors-inner" id="color-5" style="width: 100%; height: 50%;">
-              </div>
-              <div
-                style="transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                class="content-wrapper">
-                <h3 id="hexColor5" class="heading-small">Color5</h3>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Generate button -->
-        <section id="generate">
-          <button id="generate-color" class="button small w-button"></button>
-          <h4>Oppure premi semplicemente "Spazio" per generare palette.</h4>
-          <!--             <p>Click to copy individual color Press "C" to copy palette</p> -->
-        </section>
-      </div>
-    </div>
-    <script src="app.js"></script>
-    <script src="./script.js"></script>
-
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"
+      integrity="sha512-hDWGyh+Iy4Mr9AHOzUP2+Y0iVPn/BwxxaoSleEjH/i1o4EVTF/sh0/A1Syii8PWOae+uPr+T/KHwynoebSuAhw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
-  </html>
+</body>
+</html>

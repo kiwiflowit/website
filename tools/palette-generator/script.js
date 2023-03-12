@@ -1,81 +1,121 @@
-const button = document.getElementById("generate-color");
-  const clip = document.querySelector("nav > p");
+const clickedColour = document.querySelector('.clicked-colour')
+const hexValue = document.querySelector('.hex-colour')
+const colourValue = document.querySelectorAll('.colour-value')
+const colourValueCopy = document.querySelectorAll('.colour-value')
+const colourValueText = document.querySelectorAll('.colour-value-text')
+const generateBtn = document.querySelector('.btn')
 
-  // Hex background colors
-  const color_1 = document.getElementById("color-1");
-  const color_2 = document.getElementById("color-2");
-  const color_3 = document.getElementById("color-3");
-  const color_4 = document.getElementById("color-4");
-  const color_5 = document.getElementById("color-5");
 
-  const hexColor_1 = document.getElementById("hexColor1");
-  const hexColor_2 = document.getElementById("hexColor2");
-  const hexColor_3 = document.getElementById("hexColor3");
-  const hexColor_4 = document.getElementById("hexColor4");
-  const hexColor_5 = document.getElementById("hexColor5");
 
-  const colorCodes = [
-    0,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-  ];
-
-// Function to generate Hex colors
-  function generateColors(){
-      let hexColor1 = "#",
-      hexColor2 = "#",
-      hexColor3 = "#",
-      hexColor4 = "#",
-      hexColor5 = "#";
-
-    // for loop to generate hexadecimal colors by looping 5 times and concatenating to # to form hex code
-    for (let i = 0; i < 6; ++i) {
-      hexColor1 += `${colorCodes[rand(colorCodes)]}`;
-      hexColor2 += `${colorCodes[rand(colorCodes)]}`;
-      hexColor3 += `${colorCodes[rand(colorCodes)]}`;
-      hexColor4 += `${colorCodes[rand(colorCodes)]}`;
-      hexColor5 += `${colorCodes[rand(colorCodes)]}`;
+// Random HEX Colour Value Generator
+// CREDIT ==== https://stackoverflow.com/questions/1484506/random-color-generator
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
     }
-
-    hexColor_1.textContent = hexColor1;
-    color_1.style.backgroundColor = `${hexColor1}`;
-
-    hexColor_2.textContent = hexColor2;
-    color_2.style.backgroundColor = `${hexColor2}`;
-
-    hexColor_3.textContent = hexColor3;
-    color_3.style.backgroundColor = `${hexColor3}`;
-
-    hexColor_4.textContent = hexColor4;
-    color_4.style.backgroundColor = `${hexColor4}`;
-
-    hexColor_5.textContent = hexColor5;
-    color_5.style.backgroundColor = `${hexColor5}`;
+    return color;
   }
 
-  function rand(color) {
-    return Math.floor(Math.random() * color.length);
-  };
-  
-// Function to generate colors when generate button is clicked
-button.addEventListener("click", generateColors);
+// FUNC - Generates random colour in DOM
+function generateRandomColour() {
+    colourValueText.forEach((text) => {
+        text.innerText = getRandomColor()
+        text.previousElementSibling.style.backgroundColor = `${text.innerText}`
 
-// function to generate colors when spacebar is pressed. 'Keydown event'
-window.addEventListener('keydown', e => {
-  if(e.keyCode == '32'){
-    generateColors();
-  }
-});
+        
+    })
+    
+}
+
+generateRandomColour()
+
+// FUNC - Add copied popup on screen and pop up colour card
+function clickedColorPalette() {
+    colourValue.forEach((colour) => {
+        colour.addEventListener('click', () => {
+            // Clicked colour palatte card effect
+            colour.classList.add('success');
+            // Clicked colour card pop up
+            clickedColour.classList.add('active')
+            // Add HEX value to pop up
+            hexValue.innerText = `${colour.lastElementChild.innerText}`
+
+            // Copy to clipboard
+            // CREDIT ==== https://alligator.io/js/copying-to-clipboard/
+            const selection = window.getSelection()
+            const range = document.createRange()
+            range.selectNodeContents(colour);
+            selection.removeAllRanges()
+            selection.addRange(range)
+            
+            try {
+                document.execCommand('copy')
+                selection.removeAllRanges()
+    
+                // const original = colour.textContent
+                // colour.textContent = 'Copied!'
+                
+                setTimeout(() => {
+                    // Removes classes
+                    colour.classList.remove('clicked')
+                    colour.classList.remove('success');
+                    
+                }, 1000)
+            } catch(e) {
+                // const errorMsg = document.querySelector('.error-msg');
+                // errorMsg.classList.add('show');
+    
+                // setTimeout(() => {
+                //     errorMsg.classList.remove('show');
+                // }, 1000);
+    
+            }
+            setTimeout(() => {
+                // Longer timeout for pop up class removal
+                clickedColour.classList.remove('active')
+            }, 1500)
+        })
+    })
+}
+
+clickedColorPalette()
+
+
+// CREDIT === Thanks to TimonNetherlands for the help with this one
+// https://stackoverflow.com/questions/65655896/copy-innertext-of-multiple-element-to-clipboard-using-js/65656153#65656153
+function copyAllHexValues() {
+    let values = [];
+    document.querySelectorAll('.colour-value-text').forEach( (p) => values.push( p.innerHTML ) );
+    let text = document.createElement('textarea');
+    document.body.appendChild(text);
+    text.value = values.join(', ');
+    text.select();
+    document.execCommand('copy');
+    text.parentNode.removeChild(text);
+       
+}
+
+// document.execCommand('copy')
+document.addEventListener('keydown', (e) => {
+    const c_keyDown = e.key
+
+    if(c_keyDown == 'c') {
+        copyAllHexValues()
+        }
+    })
+
+// Generate Random Palette - Spacebar
+document.addEventListener('keydown', (e) => {
+    const spacebarDown = e.key
+
+    if(spacebarDown == ' ') {
+        generateRandomColour()
+        }
+})
+
+// Generate Random Palette - Btn
+generateBtn.addEventListener('click', () => {
+    generateRandomColour()
+})
