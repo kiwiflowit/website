@@ -35,7 +35,7 @@
       -moz-osx-font-smoothing: grayscale;
     }
   </style>
-    <meta name="theme-color" content="#D4F4FC">
+    <meta name="theme-color" content="#f5f5f5">
 </head>
 
 <script>
@@ -43,7 +43,8 @@
     return !(e.keyCode == 32);
   };
 </script>
-<div>
+
+<nav style="position: fixed; top: 0; z-index: 20; background-color: #f5f5f5; width: 100%;">
   <div class="button-wrapper"
     style="transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     <a href="/tools" class="link-block w-inline-block">
@@ -59,7 +60,7 @@
       <div class="button-hover-fill"></div>
     </a>
   </div>
-</div>
+</nav>
 
 <body>
   <div class="loader wf-section">
@@ -70,7 +71,7 @@
     </div>
   </div>
 
-  <section class="section blog-post bg-light-blue wf-section">
+  <section style="margin-top: -2rem;" class="section blog-post bg-light-blue wf-section">
     <div class="container titles w-container">
       <div class="heading-xxlarge xl margin-bottom-xsmall">Crea palette infinite per il tuo </span><span
           class="span-scribble">brand</span></div>
@@ -109,7 +110,7 @@
             <p class="colour-value-text"></p>
           </div>
         </div>
-        <div class="generate-colour">
+        <div style="margin-bottom: 5rem;" class="generate-colour">
           <div style="overflow: hidden; position: fixed; bottom: 0; margin-bottom: 2rem; z-index: 10;">
             <button id="copy-button" class="link-block w-inline-block btn">
               <div class="btn-label-wrapper">
@@ -124,9 +125,10 @@
             </button>
           </div>
 
-          <p class="btn-secondary-text">
+          <p style="width: 100%; text-align: center;" class="btn-secondary-text">
             Premi &quot;Spazio&quot; per generare una nuova palette. <br><br>
-            Clicca su un colore per copiare il suo HEX <br><br> Premi &quot;C&quot; per copiare l'intera palette
+            Clicca su un colore per copiare il suo HEX o premi &quot;C&quot; per copiare l'intera palette
+            <br><br><br><br><br>.
           </p>
         </div>
       </div>
