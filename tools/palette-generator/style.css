@@ -48,6 +48,26 @@
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
 }
+@media screen and (max-width: 320px) {
+    .colour-value {
+        height: 9rem;
+        width: 5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .colour-value {
+        height: 12rem;
+        width: 8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .colour-value {
+        height: 13.5rem;
+        width: 10rem;
+    }
+}
 
 
 .colour-value.success {
@@ -83,6 +103,7 @@
     padding: 15px 0 5px 0 ;
     color: #898D97;
     font-weight: 700;
+    font-size: medium;
 }
 
 .colour-value-text.clicked {
