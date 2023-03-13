@@ -20,7 +20,7 @@
 }
 
 .colour-header {
-    padding-bottom: 50px;
+    padding-bottom: 5rem;
 }
 
 .colour-palette-showcase {
@@ -35,8 +35,8 @@
     flex-direction: column;
     justify-content: center;
     background-color: #fff ;
-    height: 250px;
-    width: 150px;
+    height: 10rem;
+    width: 6rem;
     padding: 10px;
     margin: 10px;
     border-radius: 1.5rem;
@@ -110,22 +110,4 @@
     color: #151B30;
     padding: 5px;
     margin-bottom: 40px;
-}
-
-.instructions {
-    background-color: #fff;
-    color:#5A5F6C ;
-    font-size: 0.7rem;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-@media (max-width: 889px) {
-
-    .clicked-colour {
-        margin-bottom: 20px;
-    }
-    .btn-secondary-text {
-        margin-bottom: 20px;
-    }
 }
