@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #EBEBF3;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
 .clicked-colour {
     background-color: #0C1226;
@@ -73,17 +93,9 @@
 .colour-value.success {
     background-color: #fff;
     box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.3);
-    transform: translateY(-10px);
-    transition: transform 0.2s ease-in-out;
-    transition: transform 0.1s ease-in-out;
-    -webkit-transition: transform 0.2s ease-in-out;
-    -moz-transition: transform 0.2s ease-in-out;
-    -ms-transition: transform 0.2s ease-in-out;
-    -o-transition: transform 0.2s ease-in-out;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+    transform: rotateY(360deg) translateY(-10px);
+    transition: transform 0.5s linear;
+    transition: transform 0.2s ease-in;
 }
 
 .colour-value.colour-value.success .colour-value-text {
@@ -115,6 +127,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 5rem;
+    margin: 50px 0 20px 0;
+    padding: 15px 20px;
+    width: 100%;
+    color: #fff;
+    background-color: #7E6DCA;
+    font-weight: 500;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
