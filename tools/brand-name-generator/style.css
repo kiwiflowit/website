@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,400,700,900');
+
+body {
+  background: #eee;
+}
+
+body{
+  font-family: 'work sans', sans-serif;
+  color: #303040;
+}
+
+.results-list {
+  padding: 2rem;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-item > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff ;
+  height: 5rem;
+  width: 17rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in;
+  cursor: pointer;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+@media screen and (min-width: 375px) {
+  .result-item > span {
+    height: 5rem;
+    width: 20rem;
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .result-item > span {
+    height: 5rem;
+    width: 23rem;
+    font-size: 100%;
+  }
+}
+
+.result-item > span {
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.1em;
+}
+
+.result-item:hover > span {
+  -webkit-transform: scale(0) translate3d(0, 0, 0);
+          transform: scale(0) translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 150ms ease;
+  transition: -webkit-transform 150ms ease;
+  -o-transition: transform 150ms ease;
+  transition: transform 150ms ease;
+  transition: transform 150ms ease, -webkit-transform 150ms ease;
+}
+
+.result-item:nth-child(3n+2) > span {
+  text-transform: none;
+  font-weight: 200;
+  letter-spacing: 0;
+  font-size: 1.9em;
+}
+
+
+.result-item:nth-child(7n+3) > span {
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  font-size: 1.7em;
+}
+
+.result-item:nth-child(5n+0) > span {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  font-size: 1.1em;
+}
+
+.result-item:hover > span {
+  -webkit-transform: scale(1) translate3d(0, 0, 0);
+          transform: scale(1) translate3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .result-item:hover > span, 
+  .result-item:nth-child(9n+5) > span {
+    background: #303030;
+    color: white;
+    -webkit-transform: scale(1.05) translate3d(0, 0, 0);
+            transform: scale(1.05) translate3d(0, 0, 0);
+  }
+
+  .result-item:nth-child(9n+5) > span {
+    -webkit-transform: scale(1.1) translate3d(0, 0, 0);
+            transform: scale(1.1) translate3d(0, 0, 0);
+  }
+}
+
+.results-list > hr {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  background: #888;
+  height: 1px;
+  margin: 16px 32px;
+}
+
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
