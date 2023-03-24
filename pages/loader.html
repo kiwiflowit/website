@@ -1,13 +1,34 @@
 <!-- LOADER -->
+<style>
+    @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  /* Applichiamo la regola di animazione al div */
+  #loader-id {
+    animation: fadeOut 1s;
+  }
+</style>
+<script>
+  const div = document.querySelector('#loader-id');
+  div.addEventListener('animationend', () => {
+    div.parentNode.removeChild(div);
+  });
+  setTimeout(() => {
+    div.style.display = 'none';
+  }, 1000);
+</script>
+
+</script>
 <div id="loader-id">
     <div class="loader wf-section">
         <div class="loader-wrapper">
             <div class="loader-wrapper">
                 <object type="image/svg+xml" style="zoom: 180%;" data="/img/loader.svg" loading="lazy" alt=""
-                class="logo-loader">
-                <div class="progress-bar-wrapper">
-                    <div class="progress-bar"></div>
-                </div>
+                    class="logo-loader">
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar"></div>
+                    </div>
             </div>
         </div>
     </div>
