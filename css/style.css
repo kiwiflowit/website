@@ -4,7 +4,7 @@
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-    font-family: sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -12,6 +12,8 @@ html {
 body {
     margin: 0
 }
+
+
 
 article,
 aside,
@@ -27371,7 +27373,7 @@ figcaption {
 
 @font-face {
     font-family: 'Gambarino';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/6264c522a4cc8f1ffbcd8091_Gambarino-Regular.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -27379,7 +27381,7 @@ figcaption {
 
 @font-face {
     font-family: 'Mangogrotesque';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d1a2c69af51dfa3feeb1d5_MangoGrotesque-Medium.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swapf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -27387,7 +27389,7 @@ figcaption {
 
 @font-face {
     font-family: 'Mangogrotesque';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d1a2c6ab46054d1b14ee00_MangoGrotesque-Regular.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -27395,7 +27397,7 @@ figcaption {
 
 @font-face {
     font-family: 'Mangogrotesque';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d1a2c6cb5914e3fd777497_MangoGrotesque-SemiBold.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -27403,7 +27405,7 @@ figcaption {
 
 @font-face {
     font-family: 'Mangogrotesque';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d1a2c654e543a12ae3937a_MangoGrotesque-Light.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('truetype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -27411,7 +27413,7 @@ figcaption {
 
 @font-face {
     font-family: 'Mangogrotesque';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d1a2c6c4ee9b41b314f547_MangoGrotesque-ExtraBold.ttf') format('truetype'), url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d1a2c6a5865781e3153eb5_MangoGrotesque-Bold.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -27419,7 +27421,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/6261951640e0c757bb7f2eda_Switzer-Bold.otf') format('opentype'), url('https://assets.website-files.com/624fac3737d97a3e160aeffb/6261951675e61834abdac14a_Switzer-Extrabold.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -27427,7 +27429,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62619516ef0b1e5e9f43730f_Switzer-Black.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27435,7 +27437,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/626195165664b7b27e385a0c_Switzer-Regular.otf') format('opentype'), url('https://assets.website-files.com/624fac3737d97a3e160aeffb/626195165664b7b27e385a0c_Switzer-Regular.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -27443,7 +27445,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62619516b02cba8a59522f89_Switzer-Extralight.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -27451,7 +27453,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/626195163daa13569d6d5303_Switzer-Medium.otf') format('opentype'), url('https://assets.website-files.com/624fac3737d97a3e160aeffb/626195163daa13569d6d5303_Switzer-Medium.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -27459,7 +27461,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62619516500f103963464814_Switzer-Semibold.otf') format('opentype'), url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62619516500f103963464814_Switzer-Semibold.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -27467,7 +27469,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62619516f74dbe760db628f2_Switzer-Light.otf') format('opentype'), url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62619516f74dbe760db628f2_Switzer-Light.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -27475,7 +27477,7 @@ figcaption {
 
 @font-face {
     font-family: 'Velasans';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/629f9e03acef920b7c107e7d_VelaSans-ExtraBold.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27483,7 +27485,7 @@ figcaption {
 
 @font-face {
     font-family: 'Switzer';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d05d419fc60f5f56133ef5_Switzer-Thin.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -27491,7 +27493,7 @@ figcaption {
 
 @font-face {
     font-family: 'Pramukhrounded';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d0836e466b20fdee97f00f_PramukhRounded-Bold.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -27499,7 +27501,7 @@ figcaption {
 
 @font-face {
     font-family: 'Pramukhrounded';
-    src: url('https://assets.website-files.com/624fac3737d97a3e160aeffb/62d0836e3601b04104e07755_PramukhRounded-Semibold.otf') format('opentype');
+    src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('opentype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
